@@ -1,6 +1,6 @@
 # Steel Plate Fault Classification
 
-Live app: streamlit app url
+Live app: https://plate-defect-triage.streamlit.app/
 
 ## a. Problem statement
 
