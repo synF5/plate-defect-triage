@@ -1,0 +1,169 @@
+{
+  "train_plates": 1552,
+  "holdout_plates": 389,
+  "split_seed": 5781,
+  "python": "3.12.10",
+  "scikit_learn": "1.6.1",
+  "models": {
+    "Logistic Regression": {
+      "slug": "logistic_regression",
+      "holdout": {
+        "Accuracy": 0.7352185089974294,
+        "AUC": 0.9395047653345333,
+        "Precision": 0.7269108624837137,
+        "Recall": 0.744471935981961,
+        "F1": 0.7348101788194719,
+        "MCC": 0.6616575382070125
+      },
+      "holdout_mcc_95ci": [
+        0.6060086222675077,
+        0.7152215016907091
+      ],
+      "holdout_f1_by_fault": {
+        "Bumps": 0.6583850931677019,
+        "Dirtiness": 0.5,
+        "K_Scatch": 0.9259259259259259,
+        "Other_Faults": 0.6641221374045801,
+        "Pastry": 0.6666666666666666,
+        "Stains": 0.9285714285714286,
+        "Z_Scratch": 0.8
+      },
+      "train_mcc": 0.6823925436580214,
+      "cv_mcc": 0.6396361807964233,
+      "best_params": {
+        "clf__C": 10,
+        "clf__class_weight": null,
+        "geometry__derive": true
+      }
+    },
+    "Decision Tree": {
+      "slug": "decision_tree",
+      "holdout": {
+        "Accuracy": 0.7455012853470437,
+        "AUC": 0.8716104798540325,
+        "Precision": 0.7831648481660608,
+        "Recall": 0.7691906192062833,
+        "F1": 0.7743949173429405,
+        "MCC": 0.6713217095417385
+      },
+      "holdout_mcc_95ci": [
+        0.6138125711490492,
+        0.726221759147926
+      ],
+      "holdout_f1_by_fault": {
+        "Bumps": 0.5986394557823129,
+        "Dirtiness": 0.782608695652174,
+        "K_Scatch": 0.922077922077922,
+        "Other_Faults": 0.6920415224913494,
+        "Pastry": 0.6031746031746031,
+        "Stains": 0.8888888888888888,
+        "Z_Scratch": 0.9333333333333333
+      },
+      "train_mcc": 0.9488293832022382,
+      "cv_mcc": 0.653537443871994,
+      "best_params": {
+        "clf__class_weight": null,
+        "clf__criterion": "entropy",
+        "clf__max_depth": 12,
+        "clf__min_samples_leaf": 1,
+        "geometry__derive": true
+      }
+    },
+    "KNN": {
+      "slug": "knn",
+      "holdout": {
+        "Accuracy": 0.7326478149100257,
+        "AUC": 0.9511340369483076,
+        "Precision": 0.7824984377712293,
+        "Recall": 0.7642093420132268,
+        "F1": 0.7696656239480347,
+        "MCC": 0.6540210336283557
+      },
+      "holdout_mcc_95ci": [
+        0.598329581951673,
+        0.70933890576135
+      ],
+      "holdout_f1_by_fault": {
+        "Bumps": 0.6012269938650306,
+        "Dirtiness": 0.8695652173913043,
+        "K_Scatch": 0.9299363057324841,
+        "Other_Faults": 0.6762589928057554,
+        "Pastry": 0.49056603773584906,
+        "Stains": 0.9629629629629629,
+        "Z_Scratch": 0.8571428571428571
+      },
+      "train_mcc": 1.0,
+      "cv_mcc": 0.6659057608257395,
+      "best_params": {
+        "clf__n_neighbors": 7,
+        "clf__p": 2,
+        "clf__weights": "distance",
+        "geometry__derive": false,
+        "keep__k": "all"
+      }
+    },
+    "Naive Bayes": {
+      "slug": "naive_bayes",
+      "holdout": {
+        "Accuracy": 0.5938303341902313,
+        "AUC": 0.8904441405795626,
+        "Precision": 0.6285627151752912,
+        "Recall": 0.660725800700738,
+        "F1": 0.6199996309159052,
+        "MCC": 0.5141213497569399
+      },
+      "holdout_mcc_95ci": [
+        0.4543968265207736,
+        0.5692187497191704
+      ],
+      "holdout_f1_by_fault": {
+        "Bumps": 0.5445026178010471,
+        "Dirtiness": 0.42857142857142855,
+        "K_Scatch": 0.8846153846153846,
+        "Other_Faults": 0.4563106796116505,
+        "Pastry": 0.46601941747572817,
+        "Stains": 0.9629629629629629,
+        "Z_Scratch": 0.5970149253731343
+      },
+      "train_mcc": 0.5486923906106904,
+      "cv_mcc": 0.5428030897413594,
+      "best_params": {
+        "clf__var_smoothing": 1e-06,
+        "geometry__derive": false,
+        "keep__k": "all"
+      }
+    },
+    "Support Vector Machine": {
+      "slug": "support_vector_machine",
+      "holdout": {
+        "Accuracy": 0.7429305912596401,
+        "AUC": 0.959342390437403,
+        "Precision": 0.755167877257428,
+        "Recall": 0.7995044927689038,
+        "F1": 0.7663134635613382,
+        "MCC": 0.685830201425936
+      },
+      "holdout_mcc_95ci": [
+        0.6322432161298707,
+        0.7354015728340306
+      ],
+      "holdout_f1_by_fault": {
+        "Bumps": 0.6707317073170732,
+        "Dirtiness": 0.8571428571428571,
+        "K_Scatch": 0.9299363057324841,
+        "Other_Faults": 0.6982758620689655,
+        "Pastry": 0.4943820224719101,
+        "Stains": 0.8666666666666667,
+        "Z_Scratch": 0.8470588235294118
+      },
+      "train_mcc": 0.810099166385018,
+      "cv_mcc": 0.6577429761090817,
+      "best_params": {
+        "clf__C": 10,
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale",
+        "geometry__derive": false
+      }
+    }
+  }
+}
